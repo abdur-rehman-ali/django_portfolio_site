@@ -1,0 +1,46 @@
+{% extends "main/layout.html" %}
+{% load static %}
+
+{%block title%}
+Portfolio
+{% endblock title %}
+{% block css %}
+{% static 'main/css/portfolio.css' %}
+{% endblock css %}
+
+
+
+{% block body %}
+<div class="flex mt-5">
+
+
+
+<div class="card" style="width: 33%;">
+  <img src="{% static 'main/images/portfolio/pic2.jpg' %}" class="card-img-top" alt="pic1"  style="height:300px;">
+  <div class="card-body">
+    <h5 class="card-title">Web project</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-dark btn-block">Explore</a>
+  </div>
+</div>
+<div class="card" style="width: 33%;">
+  <img src="{% static 'main/images/portfolio/pic3.jpg' %}" class="card-img-top" alt="pic1" style="height:300px;">
+  <div class="card-body">
+    <h5 class="card-title">Vison project</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-dark btn-block">Explore</a>
+  </div>
+</div>
+<div class="card" style="width: 33%;">
+  <img src="{% static 'main/images/portfolio/pic1.jpg' %}" class="card-img-top" alt="pic1"  style="height:300px;">
+  <div class="card-body">
+    <h5 class="card-title">Data project</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-dark btn-block">Explore</a>
+  </div>
+</div>
+
+
+
+</div>
+{% endblock body %}

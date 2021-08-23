@@ -1,0 +1,13 @@
+{% extends "main/layout.html" %} 
+{% load static %}
+{%block title%} Home {% endblock title %}
+{% block css %}
+{% static 'main/css/home.css' %} 
+{% endblock css %}
+
+{%block body%}
+
+<main role="main" class="inner cover">
+<img src="{% static 'main/images/home.jpg' %}" alt="image here" class="main-page" >
+</main>
+{% endblock body %}
